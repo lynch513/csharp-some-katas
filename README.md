@@ -24,6 +24,11 @@ S(6) = 9^6 + 9^5 + 9^4 + 9^3 + 9^2 +9^1 + 9^0 = (9^7–1)/8 = 597 871
 
 ### FizzBuzz на C#
 
+1. [Императивная классика](https://github.com/lynch513/csharp-some-katas/blob/master/FizzBuzzClassic.csx)
+2. [Сопоставление шаблона. Вариант 1](https://github.com/lynch513/csharp-some-katas/blob/master/FizzBuzzPatternMatching1.csx)
+3. [Сопоставление шаблона. Вариант 2](https://github.com/lynch513/csharp-some-katas/blob/master/FizzBuzzPatternMatching2.csx)
+4. [Сопоставление шаблона. Вариант 3](https://github.com/lynch513/csharp-some-katas/blob/master/FizzBuzzPatternMatching3.csx)
+4. [Сопоставление шаблона, без использования циклов](https://github.com/lynch513/csharp-some-katas/blob/master/FizzBuzzPatternMatchingWithoutLoop.csx)
 
 ### [Подсчет частоты слов на F#](https://github.com/lynch513/WordFrequency)
 
