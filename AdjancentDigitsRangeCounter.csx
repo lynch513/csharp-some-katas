@@ -1,4 +1,4 @@
-public bool IsNumberHasTwoAdjacentDigits(int number)
+bool IsNumberHasTwoAdjacentDigits(int number)
 {
     int digit1, digit2;
     
@@ -15,7 +15,7 @@ public bool IsNumberHasTwoAdjacentDigits(int number)
     return false;
 }
 
-public int ParseDigit(string message)
+int ParseDigit(string message)
 {
     Console.Write("Input minimum value: ");
     if (!int.TryParse(Console.ReadLine(), out var min))
@@ -26,9 +26,9 @@ public int ParseDigit(string message)
     return min;
 }
 
-Console.WriteLine("Count adjacent digits in a series of numbers. Input digit or something else or CTRL+C for exit");
-var min = ParseDigit("Input minimum number inclusive: ");
-var max = ParseDigit("Input maximum number inclusive: ");
+Console.WriteLine("Count adjacent digits in a series of numbers. Input digits or something else or CTRL+C for exit");
+var min = ParseDigit("Input minimum number in range (inclusive): ");
+var max = ParseDigit("Input maximum number in range (inclusive): ");
 
 var count = 0;
 
