@@ -30,16 +30,13 @@ Console.WriteLine("Count adjacent digits in a series of numbers. Input digit or 
 var min = ParseDigit("Input minimum number inclusive: ");
 var max = ParseDigit("Input maximum number inclusive: ");
 
-var countThatContainTwoDigits = 0;
-var countThatNotContainTwoDigits = 0;
+var count = 0;
 
 for(var i = min; i <= max; i++)
 {
     if (IsNumberHasTwoAdjacentDigits(i))
-        countThatContainTwoDigits++;
-    else
-        countThatNotContainTwoDigits++;
+        count++;
 }
 
-Console.WriteLine($"Range from {min} to {max} contain {countThatContainTwoDigits} numbers that have adjacent numbers");
-Console.WriteLine($"Range from {min} to {max} contain {countThatNotContainTwoDigits} numbers that haven't adjacent numbers");
+Console.WriteLine($"Range from {min} to {max} contain {count} numbers that have adjacent numbers");
+Console.WriteLine($"Range from {min} to {max} contain {max - min + 1 - count} numbers that haven't adjacent numbers");
