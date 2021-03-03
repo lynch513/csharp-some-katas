@@ -36,10 +36,12 @@ S(6) = 9^6 + 9^5 + 9^4 + 9^3 + 9^2 +9^1 + 9^0 = (9^7–1)/8 = 597 871
 
 ### Подсчет количества чисел делящихся на 2, на 3 и на 5 в заданном диапазоне
 
-1. [Перебор с помощью цикла]()
-2. [Перебор с одну строку на Enumerable.Range]()
-3. [Аналитически с помощью формулы включений-исключений для трех множеств]()
-4. [Замыры производительности]()
+1. [Перебор с помощью цикла](https://github.com/lynch513/csharp-some-katas/blob/master/DivisionRemainderCounterClassic.csx)
+2. [Перебор с одну строку на Enumerable.Range](https://github.com/lynch513/csharp-some-katas/blob/master/DivisionRemainderCounterRange.csx)
+3. [Аналитически с помощью формулы включений-исключений для трех множеств](https://github.com/lynch513/csharp-some-katas/blob/master/DivisionRemainderCounterAnalytical.csx)
+4. [Замеры производительности](https://github.com/lynch513/csharp-some-katas/blob/master/DivisionRemainderCounterDiagnostic.csx)
+
+В диапазоне меньше ста, аналитика оказывается медленнее перебора. В диапазоне тысяч, аналитика вырывается вперед. А перебор на Enumerable.Range всегда самый медленный. Про то, что можно уменьшить количество умножений и заменить деление на сдвиги я знаю, но C# это все-таки больше про читаемость кода.
 
 ## Установка
 
