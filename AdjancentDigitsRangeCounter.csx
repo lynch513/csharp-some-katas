@@ -17,7 +17,7 @@ bool IsNumberHasTwoAdjacentDigits(int number)
 
 int ParseDigit(string message)
 {
-    Console.Write("Input minimum value: ");
+    Console.Write(message);
     if (!int.TryParse(Console.ReadLine(), out var min))
     {
         Console.WriteLine("Please input digit");
