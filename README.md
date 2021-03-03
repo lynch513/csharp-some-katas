@@ -39,6 +39,11 @@ S(6) = 9^6 + 9^5 + 9^4 + 9^3 + 9^2 +9^1 + 9^0 = (9^7–1)/8 = 597 871
 1. [Перебор с помощью цикла](https://github.com/lynch513/csharp-some-katas/blob/master/DivisionRemainderCounterClassic.csx)
 2. [Перебор с одну строку на Enumerable.Range](https://github.com/lynch513/csharp-some-katas/blob/master/DivisionRemainderCounterRange.csx)
 3. [Аналитически с помощью формулы включений-исключений для трех множеств](https://github.com/lynch513/csharp-some-katas/blob/master/DivisionRemainderCounterAnalytical.csx)
+
+```math
+|A'∩B'∩C'| = |X| - |A| - |B| - |C| + |A∩B| + |B∩C| + |A∩C| - |A∩B∩C|
+```
+
 4. [Замеры производительности](https://github.com/lynch513/csharp-some-katas/blob/master/DivisionRemainderCounterDiagnostic.csx)
 
 В диапазоне меньше ста, аналитика оказывается медленнее перебора циклом. В диапазоне тысяч, аналитика вырывается вперед. Перебор на Enumerable.Range всегда самый медленный. Про то, что можно уменьшить количество умножений и заменить деление на сдвиги я знаю, C# это все-таки больше про читаемость кода.
